@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lucian's Blog</title>
+  <link rel="stylesheet" type="text/css" href="css/blog2.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+  <nav class="codrops-demos">
+    <a class="" href="index.html" >HOME</a>
+  </nav>
+  <div class="content">
+    <h1 class="heading">编程博客</h1>
+    <p class="description">Welcome to Mr Xu's Blog</p><a class="card" href="#!">
+
+      <div class="front" style="background-image: url(images/blog2/559.jpg);">
+        <p>HTML</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Hyper Text Markup Language</p>
+          <button class="button">Click Here</button>
+        </div>
+      </div>
+    </a><a class="card" href="blog/CSS.html">
+      <div class="front" style="background-image: url(images/blog2/560.jpg);">
+        <p>CSS</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Cascading Style Sheets</p>
+          <button class="button">Click Here</button>
+        </div>
+      </div>
+    </a><a class="card" href="#!">
+      <div class="front" style="background-image: url(images/blog2/567.jpg);">
+        <p>JS</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>JavaScript</p>
+          <button class="button">Click Here</button>
+        </div>
+      </div>
+    </a><a class="card" href="#!">
+      <div class="front" style="background-image: url(images/blog2/562.jpg);">
+        <p>Java</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>面向对象的编程语言</p>
+          <button class="button">Click Here</button>
+        </div>
+      </div>
+    </a><a class="card" href="#!">
+      <div class="front" style="background-image: url(images/blog2/563.jpg);">
+        <p>PHP</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Hypertext Preprocessor</p>
+          <button class="button">Click Here</button>
+        </div>
+      </div>
+    </a><a class="card" href="#!">
+      <div class="front" style="background-image: url(images/blog2/564.jpg);">
+        <p>JSP</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Java Server Pages</p>
+          <button class="button">Click Here</button>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- footer -->
+  <div class="nav" id="nav">
+    <ul>
+      <li>
+        <a href="blog.html"><span>Poems</span></a>
+      </li>
+      <li style="position:relative;">
+        <a href="blog2.html"><span>Program</span></a>
+      </li>
+      <li>
+        <a href="#" onclick="return onclickConfirm();"><span>new</span></a>
+      </li>
+      <li>
+        <a href="index.html"><span>HOME</span></a>
+      </li>
+    </ul>
+  </div>
+  <script>
+		function onclickConfirm() {
+			alert('新的板块正在开发中，请敬请期待...');
+      return false;
+		}
+	</script>
+  <script>
+    function color16(){//十六进制颜色随机
+  var r = Math.floor(Math.random()*256);
+  var g = Math.floor(Math.random()*256);
+  var b = Math.floor(Math.random()*256);
+  var color = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+  return color;
+        }
+    let color = color16();
+    document.getElementById('nav').style.backgroundColor=color;
+</script>
+</body>
+
+</html>
