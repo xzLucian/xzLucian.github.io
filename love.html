@@ -1,304 +1,311 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8"/>
-<title>还嘟格格</title>
-<!-- style -->
-<link type="text/css" rel="stylesheet" href="css/theme.css">
-<script src="js/jquery-2.0.3.min.js"></script>
+	<meta charset="utf-8" />
+	<title>还嘟格格</title>
+	<!-- style -->
+	<link type="text/css" rel="stylesheet" href="css/theme.css">
+	<script src="js/jquery-2.0.3.min.js"></script>
 </head>
+
 <body>
-<div id="div_container">
-	<!-- 最外层div，用于居中兼容PC和移动 -->
-	<div id="div_start_bg"></div>
-	<div id="div_onlyyou">
-		<!-- 用于设置背景 -->
-		<div id="div_oy_inner">
-			<!-- 用于存放content -->
-			<div class="div_oy_text">
-				<h1></h1>
-				<img class="img_oy_text" src="">
-				<p class="p_oy_text"></p>
-				<ul id="ul_oy_benefit">
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
-					<li class="li_oy_benefit"></li>
+	<div id="div_container">
+		<!-- 最外层div，用于居中兼容PC和移动 -->
+		<div id="div_start_bg"></div>
+		<div id="div_onlyyou">
+			<!-- 用于设置背景 -->
+			<div id="div_oy_inner">
+				<!-- 用于存放content -->
+				<div class="div_oy_text">
+					<h1></h1>
+					<img class="img_oy_text" src="">
+					<p class="p_oy_text"></p>
+					<ul id="ul_oy_benefit">
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+						<li class="li_oy_benefit"></li>
+					</ul>
+				</div>
+				<ul id="ul_oy_btn">
+					<!-- <li onclick="oy_go_next()">听</li> -->
+					<!-- &nbsp;&nbsp;❤ -->
+					<li onclick="oy_show_benefit()">来自赞赞的问</li>
+					<!-- &nbsp;&nbsp;✖ -->
 				</ul>
-			</div>
-			<ul id="ul_oy_btn">
-				<!-- <li onclick="oy_go_next()">听</li> -->
-				<!-- &nbsp;&nbsp;❤ -->
-				<li onclick="oy_show_benefit()">来自赞赞的问</li>
-				<!-- &nbsp;&nbsp;✖ -->
-			</ul>
-			<div id="div_oy_note" onclick="oy_hide_note()">
-				<img src="images/emoji_kelian.jpg" alt=""><br>将答案发在微信哦<br>点击继续
-				<!-- <div id="div_oy_note_close">✖</div> -->
-			</div>
-			<div id="div_oy_yes">
-				<img src="images/emoji_bixin.jpg" alt=""><br>赞赞的真心话
+				<div id="div_oy_note" onclick="oy_hide_note()">
+					<img src="images/emoji_kelian.jpg" alt=""><br>将答案发在微信哦<br>点击继续
+					<!-- <div id="div_oy_note_close">✖</div> -->
+				</div>
+				<div id="div_oy_yes">
+					<img src="images/emoji_bixin.jpg" alt=""><br>赞赞的真心话
+				</div>
 			</div>
 		</div>
+		<div class="div_pure_words">
+			<div class="div_pure_words_bg">
+				<div class="div_pure_words_height"></div>
+			</div>
+			<div class="div_pw_typed">
+				<span id="span_pw_typed"></span>
+			</div>
+		</div>
+		<div id="div_btn_container">
+			<div id="div_btn_inner">
+				<div class="div_music_tips"></div>
+				<div class="div_btn" id="div_music" onclick="music_switch()">
+					<!-- 音乐按钮部分 -->
+					<img id="img_music" src="images/music_note_big.png"
+						style="-webkit-animation:music_play_rotate 1s linear infinite">
+					<!-- 您的浏览器不支持播放音乐 -->
+					<audio id="audio_music" autoplay="autoplay" loop="loop">
+						<source type="audio/mpeg" /></audio>
+				</div>
+				<div class="div_record_tips"></div>
+				<div class="div_btn" id="div_record" onclick="record_switch()">
+					<audio id="audio_record" loop="loop">
+						<source type="audio/mpeg" /></audio>
+				</div>
+			</div>
+		</div>
+		<div><a href="game.html">点击</a></div>
 	</div>
-	<div class="div_pure_words">
-		<div class="div_pure_words_bg">
-			<div class="div_pure_words_height"></div>
-		</div>
-		<div class="div_pw_typed">
-			<span id="span_pw_typed"></span>
-		</div>
-	</div>
-	<div id="div_btn_container">
-		<div id="div_btn_inner">
-			<div class="div_music_tips"></div>
-			<div class="div_btn" id="div_music" onclick="music_switch()">
-				<!-- 音乐按钮部分 -->
-				<img id="img_music" src="images/music_note_big.png" style="-webkit-animation:music_play_rotate 1s linear infinite">
-				<!-- 您的浏览器不支持播放音乐 -->
-				<audio id="audio_music" autoplay="autoplay" loop="loop"><source type="audio/mpeg"/></audio>
-			</div>
-			<div class="div_record_tips"></div>
-			<div class="div_btn" id="div_record" onclick="record_switch()">
-				<audio id="audio_record" loop="loop"><source type="audio/mpeg"/></audio>
-			</div>
-		</div>
-	</div>
-</div>
-<script>
-//判断客户端设备，选择写入meta
-function init_viewport() {
-	if (navigator.userAgent.indexOf('Android') != -1) {
-		var version = parseFloat(RegExp.$1);
-		if (version > 2.3) {
-			var width = window.outerWidth == 0 ? window.screen.width : window.outerWidth;
-			var phoneScale = parseInt(width) / 500;
-			document.write('<meta name="viewport" content="width=500, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
-		} else {
-			document.write('<meta name="viewport" content="width=500, target-densitydpi=device-dpi, user-scalable=0">');
-		}
-	} else if (navigator.userAgent.indexOf('iPhone') != -1) {
-		var phoneScale = parseInt(window.screen.width) / 550;
-		document.write('<meta name="viewport" content="width=500, min-height=750, initial-scale=' + phoneScale + ', maximum-scale=' + phoneScale + ', user-scalable=0" /> '); //0.75   0.82
-	} else {
-		document.write('<meta name="viewport" content="width=500, height=750, initial-scale=0.64" /> '); //0.75  0.82
-	}
-}
-init_viewport();
-
-var theme = 'pure_words';
-console.log('theme ->' + theme);
-var theme_content = {
-	"pure_words_content": "据说，遇见才是上上签！<br>今天是打卡的第一百次，也是最后一次！这是一个美好的开端，也是一个完美的结束。其实当时也不知道为什么会有这种想法，首先对你说一声抱歉。<br>但是主要还是应该要感谢你的陪伴，对于一个陌生的我来说，突然闯进你的生活，你给予我的是关怀、是理解、是快乐、是鼓励。<><um style='color: #F44336;'>💕</um>",
-	"typed_bool": "typed_y",
-	"cursor_char": "cursor_heart",
-	"bg_style_pure_words": "bg_opacity",
-	"bg_img": "images/3.jpg",
-	"simple_page_content": "",
-	"video_page_content": ""
-};
-console.log(theme_content);
-
-var music_json = {
-	"music_select": "m_online",
-	"m_online_id": "7",
-	"m_online_url": "images/special.mp4",
-	"m_upload_name": "null",
-	"m_upload_url": "null"
-};
-console.log(music_json);
-var record_json = {
-	"record_bool": "r_false",
-	"r_wechat_time": "null",
-	"r_wechat_url": "null",
-	"r_wechat_amr": "null"
-};
-console.log(record_json);
-
-
-var main_title = '还嘟格格❤️';
-// console.log(main_title);
-if (main_title == '' || main_title == 'null') { //允许标题为空
-	document.title = '嘟嘟';
-}
-
-var window_height = $(window).height();
-console.log('window_height ->' + window_height);
-var pure_words_content = theme_content['pure_words_content'];
-var str_cursorChar;
-var typed_bool;
-var interval_pw_height;
-var height_div_pw = $(".div_pure_words_height").height();
-function init_pure_words() {
-	$(".div_pure_words_height").html(pure_words_content + '22222'); //初始化复制内容，撑开文档高度            
-	// 初始化设置div的bg图片 初始化设置div的bg图片
-	if (typeof(theme_content['bg_style_pure_words']) != 'undefined' && theme_content['bg_style_pure_words'] == 'bg_opacity') {
-		if (typeof(theme_content['bg_img']) != 'undefined' && theme_content['bg_img'] != '') {
-			$(".div_pure_words_bg").css({
-				"background-image": "url(" + theme_content['bg_img'] + ")"
-			});
-		}
-	}
-	//以下是打字效果的js 
-	if (typeof(theme_content['cursor_char']) != 'undefined' && theme_content['cursor_char'] != '') {
-		switch (theme_content['cursor_char']) { //设置打字光标的样式
-		case 'cursor_heart':
-			str_cursorChar = '<um style="color: #F44336;">❤</um>';
-			break;
-		case 'cursor_sub':
-			str_cursorChar = '_';
-			break;
-		case 'cursor_music':
-			str_cursorChar = '♫';
-			break;
-		case 'cursor_star':
-			str_cursorChar = '★';
-			break;
-		case 'cursor_sun':
-			str_cursorChar = '☀';
-			break;
-		default:
-			str_cursorChar = '|';
-		}
-	} else { //处理全新作品，默认显示打字效果
-		str_cursorChar = '❤';
-	}
-	//判断用户有没有选择打字效果
-	if (typeof(theme_content['typed_bool']) != 'undefined' && theme_content['typed_bool'] != '') {
-		typed_bool = theme_content['typed_bool'] == 'typed_y' ? true : false;
-	} else {
-		typed_bool = false; //默认显示打字效果
-	}
-	display_pure_words();
-	$(".div_pure_words").fadeIn();
-	interval_pw_height = setInterval(function() {
-		console.log('div_pure_words_height -> ' + $('.div_pure_words_height').height());
-		var least_height_div_pw = $('.div_pure_words_height').height();
-		if (least_height_div_pw > height_div_pw) {
-			height_div_pw = least_height_div_pw;
-		} else {
-			clearInterval(interval_pw_height);
-			$(".div_pure_words_height").height(least_height_div_pw + 100);
-			if ($(".div_pure_words_height").height() < window_height) {
-				$(".div_pure_words_height").height(window_height); //不能小于窗口的高度
-				console.log('let us be high as window');
+	<script>
+		//判断客户端设备，选择写入meta
+		function init_viewport() {
+			if (navigator.userAgent.indexOf('Android') != -1) {
+				var version = parseFloat(RegExp.$1);
+				if (version > 2.3) {
+					var width = window.outerWidth == 0 ? window.screen.width : window.outerWidth;
+					var phoneScale = parseInt(width) / 500;
+					document.write('<meta name="viewport" content="width=500, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+				} else {
+					document.write('<meta name="viewport" content="width=500, target-densitydpi=device-dpi, user-scalable=0">');
+				}
+			} else if (navigator.userAgent.indexOf('iPhone') != -1) {
+				var phoneScale = parseInt(window.screen.width) / 550;
+				document.write('<meta name="viewport" content="width=500, min-height=750, initial-scale=' + phoneScale + ', maximum-scale=' + phoneScale + ', user-scalable=0" /> '); //0.75   0.82
+			} else {
+				document.write('<meta name="viewport" content="width=500, height=750, initial-scale=0.64" /> '); //0.75  0.82
 			}
 		}
-	}, 100);
-}
+		init_viewport();
 
-function display_pure_words() {
-	if (typed_bool) {
-		var typed_pure_words = new Typed('#span_pw_typed', {
-			strings: [pure_words_content],
-			//输入内容, 支持html标签
-			typeSpeed: 120,
-			//打字速度
-			cursorChar: str_cursorChar,
-			//替换光标的样式
-			contentType: 'html',
-			//值为html时，将打印的文本标签直接解析html标签
-			onComplete: function(abc) {
-				// console.log(abc); 
-				console.log('finished typing words');
-				// console.log($('#span_pw_typed').height()-$(".div_pure_words_height").height());
-			},
+		var theme = 'pure_words';
+		console.log('theme ->' + theme);
+		var theme_content = {
+			"pure_words_content": "据说，遇见才是上上签！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点赞赞系统也将停止运行了，在这个Beta测试版本中，不知道赞赞有么有给你带来了快乐呢。那么听听赞赞的心里话吧！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在赞赞的心中，还有很多话像对你说，但是今天的赞赞就简单的说几句哈：从第一次聊天时的小心翼翼到如今的促膝长谈，感谢你这段时间的陪伴，虽然我们从未见面，但是从彼此的言语中能感受到对方的温柔。你会认真且不厌其烦的回答我每一个问题，你会向我倾诉你的情绪，你会理智的分析每一件事情。我也知道我自己不是很健谈，但是你每次都能迎合我那拙劣的表演。我们会分享自己的兴趣爱好，不知道你有没有发现，当你看这篇文章的时候能够听到你推荐的音乐，我选择了我比较喜欢的其中一首。（如果没有播放请点击右上角的音符按钮哦，搭配音乐听赞赞讲话效果更佳哦！）对你说一句说一句真挚的<strong>谢谢你</strong>!其次还要对你说一句对不起，一来就给你乱起了外号，像什么大明湖畔的紫薇、嘟嘟、大明湖畔的嘟嘟、还嘟格格等，如有冒犯，赶紧联系那个给你起外号的臭弟弟！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;叫你外号这么久了都快忘记你的真实名字了哈哈哈，那就重新和你认识一下：“很高兴认识你，你好，我叫徐赞。你叫什么名字呀？”<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其实呢，在此之后，寡人因为忙于考研、考证之事，无心管理朝政大大小小之事。可能与嘟丞相聊天的机会也将减少，愿嘟丞相能够谅解朕，帮衬着管理朕的江山。嘟丞相放心，待寡人中举之日，即是我俩相见之时，朕的江山如若在嘟丞相的手中更加繁荣昌盛，等与寡人日后相见，必有重谢（阿里嘎多，阿里嘎多！）当然赞赞系统的下线并不意味着结束，只是从一个不认识的朋友变成了一个能倾诉自己的内心世界的知心好友，为了延续这段坚实的友谊，因此，朕提前备了薄礼，望嘟丞相收下。（玩游戏赢得神秘礼包，请退出当前页面哦，点击Gift）<um style='color: #F44336;'>💕</um>",
+			"typed_bool": "typed_y",
+			"cursor_char": "cursor_heart",
+			"bg_style_pure_words": "bg_opacity",
+			"bg_img": "images/3.jpg",
+			"simple_page_content": "",
+			"video_page_content": ""
+		};
+		console.log(theme_content);
+
+		var music_json = {
+			"music_select": "m_online",
+			"m_online_id": "7",
+			"m_online_url": "images/special.mp4",
+			"m_upload_name": "null",
+			"m_upload_url": "null"
+		};
+		console.log(music_json);
+		var record_json = {
+			"record_bool": "r_false",
+			"r_wechat_time": "null",
+			"r_wechat_url": "null",
+			"r_wechat_amr": "null"
+		};
+		console.log(record_json);
+
+
+		var main_title = '还嘟格格❤️';
+		// console.log(main_title);
+		if (main_title == '' || main_title == 'null') { //允许标题为空
+			document.title = '嘟嘟';
+		}
+
+		var window_height = $(window).height();
+		console.log('window_height ->' + window_height);
+		var pure_words_content = theme_content['pure_words_content'];
+		var str_cursorChar;
+		var typed_bool;
+		var interval_pw_height;
+		var height_div_pw = $(".div_pure_words_height").height();
+		function init_pure_words() {
+			$(".div_pure_words_height").html(pure_words_content + '22222'); //初始化复制内容，撑开文档高度            
+			// 初始化设置div的bg图片 初始化设置div的bg图片
+			if (typeof (theme_content['bg_style_pure_words']) != 'undefined' && theme_content['bg_style_pure_words'] == 'bg_opacity') {
+				if (typeof (theme_content['bg_img']) != 'undefined' && theme_content['bg_img'] != '') {
+					$(".div_pure_words_bg").css({
+						"background-image": "url(" + theme_content['bg_img'] + ")"
+					});
+				}
+			}
+			//以下是打字效果的js 
+			if (typeof (theme_content['cursor_char']) != 'undefined' && theme_content['cursor_char'] != '') {
+				switch (theme_content['cursor_char']) { //设置打字光标的样式
+					case 'cursor_heart':
+						str_cursorChar = '<um style="color: #F44336;">❤</um>';
+						break;
+					case 'cursor_sub':
+						str_cursorChar = '_';
+						break;
+					case 'cursor_music':
+						str_cursorChar = '♫';
+						break;
+					case 'cursor_star':
+						str_cursorChar = '★';
+						break;
+					case 'cursor_sun':
+						str_cursorChar = '☀';
+						break;
+					default:
+						str_cursorChar = '|';
+				}
+			} else { //处理全新作品，默认显示打字效果
+				str_cursorChar = '❤';
+			}
+			//判断用户有没有选择打字效果
+			if (typeof (theme_content['typed_bool']) != 'undefined' && theme_content['typed_bool'] != '') {
+				typed_bool = theme_content['typed_bool'] == 'typed_y' ? true : false;
+			} else {
+				typed_bool = false; //默认显示打字效果
+			}
+			display_pure_words();
+			$(".div_pure_words").fadeIn();
+			interval_pw_height = setInterval(function () {
+				console.log('div_pure_words_height -> ' + $('.div_pure_words_height').height());
+				var least_height_div_pw = $('.div_pure_words_height').height();
+				if (least_height_div_pw > height_div_pw) {
+					height_div_pw = least_height_div_pw;
+				} else {
+					clearInterval(interval_pw_height);
+					$(".div_pure_words_height").height(least_height_div_pw + 100);
+					if ($(".div_pure_words_height").height() < window_height) {
+						$(".div_pure_words_height").height(window_height); //不能小于窗口的高度
+						console.log('let us be high as window');
+					}
+				}
+			}, 100);
+		}
+
+		function display_pure_words() {
+			if (typed_bool) {
+				var typed_pure_words = new Typed('#span_pw_typed', {
+					strings: [pure_words_content],
+					//输入内容, 支持html标签
+					typeSpeed: 120,
+					//打字速度
+					cursorChar: str_cursorChar,
+					//替换光标的样式
+					contentType: 'html',
+					//值为html时，将打印的文本标签直接解析html标签
+					onComplete: function (abc) {
+						// console.log(abc); 
+						console.log('finished typing words');
+						// console.log($('#span_pw_typed').height()-$(".div_pure_words_height").height());
+					},
+				});
+			} else {
+				//如果不需要打字效果就直接显示
+				$("#span_pw_typed").html(pure_words_content).fadeIn();
+			}
+			init_attachment();
+		}
+		var start_content = {
+			chase_title: "Hello！大明湖畔的嘟嘟<um style='color: #F44336;'>💕</um>",
+			chase_text: "点赞赞系统也即将接近尾声了哦！盘点这些日子里，赞赞给你带来了那些快乐呢？<um style='color: #F44336;'>💕</um>",
+			chase_benefit: ["没认识之前觉得我是一个怎样的人？", "我能不能给你带来快乐", "接触过我之后觉得我是一个怎样的人？", "我是不是有时候表现的很幼稚？", "你觉得点赞赞系统的意义何在？", "你是否希望点赞赞系统继续维持下去？"],
+			bg_style: "bg_custom",
+			bg_img: "images/2.jpg",
+			img_bool: "img_true",
+			img_src: "images/1.gif"
+		}; //可能为null
+		console.log(start_content);
+		var start_id;
+		$(function () {
+			//此事件为触发互动创意
+			start_id = 'onlyyou'; //可能为null
+			init_start(start_id);
 		});
-	} else {
-		//如果不需要打字效果就直接显示
-		$("#span_pw_typed").html(pure_words_content).fadeIn();
-	}
-	init_attachment();
-}
-var start_content = {
-	chase_title: "Hello！大明湖畔的嘟嘟<um style='color: #F44336;'>💕</um>",
-	chase_text: "今天是点赞赞的第100天，也是最后一天，点赞赞的系统Beta将到此结束<um style='color: #F44336;'>💕</um>",
-	chase_benefit: ["没认识之前觉得我是一个怎样的人？", "我能不能给你带来快乐", "接触过我之后觉得我是一个怎样的人？", "我是不是有时候表现的很幼稚？", "你觉得点赞赞系统的意义何在？", "你是否希望点赞赞系统继续维持下去？"],
-	bg_style: "bg_custom",
-	bg_img: "images/2.jpg",
-	img_bool: "img_true",
-	img_src: "images/1.gif"
-}; //可能为null
-console.log(start_content);
-var start_id;
-$(function() {
-	//此事件为触发互动创意
-	start_id = 'onlyyou'; //可能为null
-	init_start(start_id);
-});
-function init_start(start_id) {
-	console.log('init_start ->' + start_id);
-	switch (start_id) {
-	case 'loveformat':
-		$('.div_loveformat').show();
-		init_loveformat();
-		break;
-	case 'hearttree':
-		$('#div_hearttree').show();
-		init_hearttree();
-		break;
-	case 'courage':
-		$('#div_courage').show();
-		init_courage();
-		break;
-	case 'birthdaycake':
-		$('#div_dbcake').show();
-		init_birthdaycake();
-		break;
-	case 'intersect':
-		$('#div_intersect').show();
-		init_intersect();
-		break;
-	case 'onlyyou':
-		$('#div_onlyyou').show();
-		init_onlyyou();
-		break;
-	default:
-		init_theme();
-	}
-}
-//开始动画主体部分
-function init_theme() {
-	console.log('init_theme');
-	$('#div_start_bg').fadeOut();
-	init_pure_words();
-}
-var attachment = 'null'; //可能为null
-var attached_content = {
-	"bool_save": false
-}; //可能为null
-console.log(attached_content);
+		function init_start(start_id) {
+			console.log('init_start ->' + start_id);
+			switch (start_id) {
+				case 'loveformat':
+					$('.div_loveformat').show();
+					init_loveformat();
+					break;
+				case 'hearttree':
+					$('#div_hearttree').show();
+					init_hearttree();
+					break;
+				case 'courage':
+					$('#div_courage').show();
+					init_courage();
+					break;
+				case 'birthdaycake':
+					$('#div_dbcake').show();
+					init_birthdaycake();
+					break;
+				case 'intersect':
+					$('#div_intersect').show();
+					init_intersect();
+					break;
+				case 'onlyyou':
+					$('#div_onlyyou').show();
+					init_onlyyou();
+					break;
+				default:
+					init_theme();
+			}
+		}
+		//开始动画主体部分
+		function init_theme() {
+			console.log('init_theme');
+			$('#div_start_bg').fadeOut();
+			init_pure_words();
+		}
+		var attachment = 'null'; //可能为null
+		var attached_content = {
+			"bool_save": false
+		}; //可能为null
+		console.log(attached_content);
 
-function init_attachment() { //开始attachment
-	console.log('init_attachment ->' + attachment);
-	switch (attachment) {
-	case 'timer':
-		init_at_timer();
-		break;
-	default:
-		return;
-	}
-}
-</script>
-<!-- JQuery -->
-<script src="js/typed.min.js"></script>
-<script src="js/start_onlyyou.js"></script>
-<script src='js/theme_common.js'></script>
+		function init_attachment() { //开始attachment
+			console.log('init_attachment ->' + attachment);
+			switch (attachment) {
+				case 'timer':
+					init_at_timer();
+					break;
+				default:
+					return;
+			}
+		}
+	</script>
+	<!-- JQuery -->
+	<script src="js/typed.min.js"></script>
+	<script src="js/start_onlyyou.js"></script>
+	<script src='js/theme_common.js'></script>
 </body>
+
 </html>
