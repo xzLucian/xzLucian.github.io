@@ -99,7 +99,6 @@
 
 				</div>
 			</aside>
-			<div class='calendar' id='calendar'></div>
 			<div id="colorlib-main">
 				<section class="colorlib-about" data-section="about">
 					<div class="colorlib-narrow-content">
@@ -745,8 +744,8 @@
 						<li id="qq"><a href="#!">QQ</a></li>
 						<li id="wechat"><a href="#!">WeChat</a></li>
 						<li><a href="blog.html">MyBlog</a></li>
-						<li id="weibo"><a href="love.html">DuDu</a></li>
-						<li><a href="#!" onclick="return onclickConfirm();">Gift</a></li>
+						<li id="weibo"><a href="#!" onclick="return onclickMessage();">NULL</a></li>
+						<li><a href="#!" onclick="return onclickConfirm();">Game</a></li>
 
 					</ul>
 					<!-- End Social Icons -->
@@ -767,6 +766,9 @@
 	</div><!-- end:colorlib-page -->
 
 	<script>
+		function onclickMessage(){
+			alert("正在维护中......");
+		}
 		function onclickConfirm() {
 			var name = prompt("请输入暗语："); /*在页面上弹出提示对话框，将用户输入的结果赋给变量name*/
 			if (name == "1211") {
